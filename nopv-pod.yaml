@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: iowrite
+  labels:
+    app: iowrite
+  namespace: volume-fun
+spec:
+  containers:
+    - name: iowrite
+      image: "quay.io/rhpowell_mobb/volume_fun:latest"
